@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+hooks:
+  ApplicationStop:
+    - location: scripts/app_stop.sh
+      timeout: 300
+      runas: root
+  BeforeInstall:
+    - location: scripts/install_packages.sh
+      timeout: 300
+      runas: root
+    - location: scripts/login.sh
+      timeout: 300
+      runas: root
+    - location: scripts/pull.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/app_start.sh
+      timeout: 300
+      runas: root

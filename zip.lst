@@ -1,0 +1,8 @@
+appspec.yml
+scripts/install_packages.sh
+scripts/app_start.sh
+scripts/app_stop.sh
+scripts/login.sh
+scripts/pull.sh
+zip.lst
+
