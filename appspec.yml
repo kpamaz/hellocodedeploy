@@ -12,9 +12,9 @@ hooks:
     - location: scripts/login.sh
       timeout: 300
       runas: root
-    - location: scripts/pull.sh
-      timeout: 300
-      runas: root
+#    - location: scripts/pull.sh
+#      timeout: 300
+#      runas: root
   ApplicationStart:
     - location: scripts/app_start.sh
       timeout: 300
